@@ -1,23 +1,94 @@
 aid: secret-double-octopus
 name: Secret Double Octopus
-description: 'Secret Double Octopus is a company surfaced via the API Evangelist harvest backlog (source:
-  secondary-market) and added to the network as a stub for full-pipeline profiling.'
+description: 'Secret Double Octopus (SDO) is an enterprise workforce authentication vendor whose Octopus
+  Authentication Platform uses patented ZeroPassword technology to eliminate all user-managed passwords
+  and deliver phishing-resistant, passwordless MFA across legacy, on-premises, cloud, and air-gapped
+  systems. The platform covers SaaS and web apps, VPN, RDP, VDI/Citrix, Linux SSH, shared workstations,
+  servers and domain-joined desktops, and integrates with existing identity infrastructure — Active
+  Directory, Microsoft Entra ID and Okta — without redesign. Any authenticator is supported: mobile push,
+  biometrics, FIDO2 security keys, X.509 smart cards, Windows Hello and OTP tokens. SDO ships an Octopus
+  Management Console REST API for system control, scripting, bulk updates and IDM integration (SailPoint
+  and similar), but that API is served from the customer''s own deployed Management Console and its
+  reference is not published on a public developer portal.'
+image: https://doubleoctopus.com/wp-content/uploads/2022/10/cropped-favicon_large-1-192x192.png
 url: https://raw.githubusercontent.com/api-evangelist/secret-double-octopus/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
 specificationVersion: '0.20'
 created: '2026-08-26'
 modified: '2026-08-26'
 tags:
 - Company
-apis: []
+- Authentication
+- Identity and Access Management
+- Passwordless
+- Multi-Factor Authentication
+- Security
+- FIDO2
+- Zero Trust
+- Enterprise
+- Workforce Identity
+apis:
+- name: Octopus Management Console REST API
+  description: 'REST API of the Octopus Authentication Server Management Console. SDO''s own FAQ states
+    "we provide comprehensive REST APIs that allow complete system control, including scripting, bulk
+    updates, and integration with identity management solutions like SailPoint." The API is served by
+    each customer''s own deployed Management Console — endpoints live under <console-host>:<port>/api/
+    and the interactive API reference is served at <console-host>:<port>/docs/ inside that deployment.
+    There is no vendor-hosted API host and no publicly published machine-readable specification.'
+  humanURL: https://support.doubleoctopus.com/support/solutions/articles/33000275542-how-to-configure-the-help-desk-role
+  baseURL: https://{management-console-host}:{port}/api/
+  tags:
+  - Authentication
+  - Identity and Access Management
+  - Administration
+  properties:
+  - type: Authentication
+    url: authentication/secret-double-octopus-authentication.yml
+  - type: Conventions
+    url: conventions/secret-double-octopus-conventions.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/secret-double-octopus-domain-security.yml
 - type: Website
-  url: https://www.nasdaqprivatemarket.com/
+  url: https://doubleoctopus.com/
+- type: Documentation
+  url: https://support.doubleoctopus.com/support/solutions
+- type: Support
+  url: https://support.doubleoctopus.com/support/home
+- type: Blog
+  url: https://doubleoctopus.com/blog/
+- type: StatusPage
+  url: https://status.doubleoctopus.com/
+- type: TermsOfService
+  url: https://doubleoctopus.com/terms-of-use/
+- type: PrivacyPolicy
+  url: https://doubleoctopus.com/website-privacy-policy/
+- type: LLMsTxt
+  url: llms/secret-double-octopus-llms.txt
+- type: Lifecycle
+  url: lifecycle/secret-double-octopus-lifecycle.yml
+- type: Deprecation
+  url: https://support.doubleoctopus.com/support/solutions/articles/33000295981-octopus-authentication-end-of-life-end-of-support-plan
+- type: ChangeLog
+  url: changelog/secret-double-octopus-changelog.yml
+- type: Conformance
+  url: conformance/secret-double-octopus-conformance.yml
+- type: Compliance
+  url: conformance/secret-double-octopus-conformance.yml
+- type: Plans
+  url: plans/secret-double-octopus-plans-pricing.yml
+- type: RateLimits
+  url: rate-limits/secret-double-octopus-rate-limits.yml
+- type: Packages
+  url: packages/secret-double-octopus-packages.yml
+x-enrichment:
+  date: '2026-08-26'
+  status: enriched
+  artifacts_added: 12
+  pass: local-v1

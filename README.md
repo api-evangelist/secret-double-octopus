@@ -64,5 +64,15 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Secret Double Octopus is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://www.nasdaqprivatemarket.com/
+Secret Double Octopus (SDO) is an enterprise workforce authentication vendor whose Octopus
+Authentication Platform uses patented ZeroPassword technology to eliminate all user-managed passwords
+and deliver phishing-resistant, passwordless MFA across legacy, on-premises, cloud, and air-gapped
+systems. SDO ships an Octopus Management Console REST API for system control, scripting, bulk updates
+and IDM integration, but that API is served from each customer's own deployed Management Console —
+its interactive reference lives at `<console-host>:<port>/docs/` inside the deployment — so there is
+no publicly published machine-readable specification for it.
+
+- Website: https://doubleoctopus.com/
+- Documentation / support portal: https://support.doubleoctopus.com/support/solutions
+- Status: https://status.doubleoctopus.com/
+- llms.txt: https://doubleoctopus.com/llms.txt
