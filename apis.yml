@@ -10,6 +10,17 @@ description: 'Secret Double Octopus (SDO) is an enterprise workforce authenticat
   Management Console REST API for system control, scripting, bulk updates and IDM integration (SailPoint
   and similar), but that API is served from the customer''s own deployed Management Console and its
   reference is not published on a public developer portal.'
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 image: https://doubleoctopus.com/wp-content/uploads/2022/10/cropped-favicon_large-1-192x192.png
 url: https://raw.githubusercontent.com/api-evangelist/secret-double-octopus/refs/heads/main/apis.yml
 x-type: company
