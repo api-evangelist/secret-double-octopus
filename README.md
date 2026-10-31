@@ -64,15 +64,102 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Secret Double Octopus (SDO) is an enterprise workforce authentication vendor whose Octopus
-Authentication Platform uses patented ZeroPassword technology to eliminate all user-managed passwords
-and deliver phishing-resistant, passwordless MFA across legacy, on-premises, cloud, and air-gapped
-systems. SDO ships an Octopus Management Console REST API for system control, scripting, bulk updates
-and IDM integration, but that API is served from each customer's own deployed Management Console —
-its interactive reference lives at `<console-host>:<port>/docs/` inside the deployment — so there is
-no publicly published machine-readable specification for it.
+Secret Double Octopus (SDO) is an enterprise workforce authentication vendor whose Octopus Authentication Platform uses patented ZeroPassword technology to eliminate all user-managed passwords and deliver phishing-resistant, passwordless MFA across legacy, on-premises, cloud, and air-gapped systems. The platform covers SaaS and web apps, VPN, RDP, VDI/Citrix, Linux SSH, shared workstations, servers and domain-joined desktops, and integrates with existing identity infrastructure — Active Directory, Microsoft Entra ID and Okta — without redesign. Any authenticator is supported: mobile push, biometrics, FIDO2 security keys, X.509 smart cards, Windows Hello and OTP tokens. SDO ships an Octopus Management Console REST API for system control, scripting, bulk updates and IDM integration (SailPoint and similar), but that API is served from the customer's own deployed Management Console and its reference is not published on a public developer portal.
 
-- Website: https://doubleoctopus.com/
-- Documentation / support portal: https://support.doubleoctopus.com/support/solutions
-- Status: https://status.doubleoctopus.com/
-- llms.txt: https://doubleoctopus.com/llms.txt
+**Areas:** Company · Authentication · Identity and Access Management · Passwordless · Multi-Factor Authentication · Security · FIDO2 · Zero Trust · Enterprise · Workforce Identity
+
+## Secret Double Octopus on APIs.io
+
+Everything profiled for Secret Double Octopus is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/secret-double-octopus/](https://apis.io/providers/secret-double-octopus/)** — or go straight to one of the APIs or properties below.
+
+### APIs (1)
+
+- [Octopus Management Console REST API](https://apis.io/apis/secret-double-octopus/octopus-management-console-rest-api/) — REST API of the Octopus Authentication Server Management Console. SDO's own FAQ states "we provide comprehensive REST APIs that allow complete system…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Secret Double Octopus Authentication](https://apis.io/security/secret-double-octopus/secret-double-octopus-authentication/)
+- [Secret Double Octopus Domain Security](https://apis.io/security/secret-double-octopus/secret-double-octopus-domain-security/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Secret Double Octopus Plans Pricing](https://apis.io/plans/secret-double-octopus/secret-double-octopus-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Secret Double Octopus Rate Limits](https://apis.io/rate-limits/secret-double-octopus/secret-double-octopus-rate-limits/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://doubleoctopus.com/)
+- [Documentation](https://support.doubleoctopus.com/support/solutions)
+- [Support](https://support.doubleoctopus.com/support/home)
+- [Blog](https://doubleoctopus.com/blog/)
+- [Terms of service](https://doubleoctopus.com/terms-of-use/)
+- [Privacy policy](https://doubleoctopus.com/website-privacy-policy/)
+- [Status](https://status.doubleoctopus.com/)
+
+## API Evangelist rating
+
+**Kin Score 28.3** — thin · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 73.2 |
+| Contract quality | 0.0 |
+| Contract governance | 18.2 |
+| Operational transparency | 39.5 |
+| Developer ergonomics | 28.6 |
+| Access clarity | 28.9 |
+
+**Agent readiness 5.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | documented (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 29.4** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/secret-double-octopus/](https://apis.io/providers/secret-double-octopus/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Secret Double Octopus: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/secret-double-octopus/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
